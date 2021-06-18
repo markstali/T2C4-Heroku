@@ -1,0 +1,39 @@
+body {
+	font-family: 'Verdana', sans-serif;
+}
+
+.calculadora-dano {
+    color: white;
+    margin-left: 20%;
+    margin-right:10%;
+    border:none;
+    border-radius: 20px;
+    background-image:url("img/avengers.png"), url("img/universo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linha-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.elementos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    background-position: center;
+}
+
+button {
+    font-weight:bold;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
