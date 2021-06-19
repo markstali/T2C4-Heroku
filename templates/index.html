@@ -9,11 +9,11 @@
 <body>
     <div class="calculadora-dano">
         <div class="linha-container">
-            <h1 class="titulo pula-linha">Calculadora de Dano</h1>
+            <h1 class="titulo pula-linha">CALCULADORA DE DANO</h1>
         </div>
 
         <div class="linha-container">
-            <h2>Selecione um personagem</h2>
+            <h2>SELECIONE UM PERSONAGEM</h2>
         </div>
 
         <div class="elementos-container">
@@ -34,30 +34,35 @@
             </div>
 
             <div class="linha-container">
-                <h2>Selecione um ataque</h2>
+                <h2><br>SELECIONE UM ATAQUE</h2>
             </div>
 
             <div class="elementos-container">
-                <div class="elemento arma" id="escudo">
+                <div class="elemento-arma" id="escudo">
                     <img src="/static/img/Shield.png" alt="Escudo" width="200" height="200" />
                     <button>Escudo</button>
                 </div>
-                <div class="elemento arma" id="manopla">
+
+                <div class="elemento-arma" id="manopla">
                     <img src="/static/img/manopla.png" alt="Manopla" width="200" height="200" />
                     <button>Manopla</button>
                 </div>
-                <div class="elemento arma" id="soco">
+
+                <div class="elemento-arma" id="soco">
                     <img src="/static/img/socoHulk.png" alt="Soco" width="200" height="200" />
                     <button>Soco</button>
                 </div>
             </div>
-            <div class="linha-container">
+            <div>
                 <button id="calcular" type="button">Calcular Dano</button>
+                <div>
+                    <span id="dano"></span>
+                </div>
             </div>
-            <div class="linha-container">
-                <span id="dano"></span>
-            </div>
+
+
         </div>
+    </div>
 </body>
 
 </html>

@@ -1,16 +1,27 @@
+/* *{
+    border: 1px solid black;
+} */
 body {
 	font-family: 'Verdana', sans-serif;
+    
+}
+h1,h2{
+    color: #FFF;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
 }
 
 .calculadora-dano {
     color: white;
-    margin-left: 20%;
-    margin-right:10%;
+    margin-left: 18%;
+    margin-right:18%;
     border:none;
     border-radius: 20px;
     background-image:url("/static/img/avengers.png"), url("/static/img/universo.jpg");
     background-repeat: no-repeat;
     background-position: center;
+   
+    
 }
 
 .linha-container {
@@ -20,6 +31,9 @@ body {
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
+    text-align: center;
+
+    
 }
 
 .elementos-container {
@@ -28,12 +42,21 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; 
     background-position: center;
+    text-align: center;
 }
-
+.elemento-personagem, .elemento-arma{
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 30px;
+    
+}
 button {
     font-weight:bold;
     cursor: pointer;
     padding: 10px;
     text-align: center;
+    display: block;
+    border-radius: 20px;
 }
 
