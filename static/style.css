@@ -8,7 +8,7 @@ body {
     margin-right:10%;
     border:none;
     border-radius: 20px;
-    background-image:url("/img/avengers.png"), url("/img/universo.jpg");
+    background-image:url("/static/img/avengers.png"), url("/static/img/universo.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
