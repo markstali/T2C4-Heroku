@@ -8,6 +8,7 @@
 
 <body>
     <div class="calculadora-dano">
+        
         <div class="linha-container">
             <h1 class="titulo pula-linha">CALCULADORA DE DANO</h1>
         </div>
@@ -17,44 +18,28 @@
         </div>
 
         <div class="elementos-container">
-            <div class="elemento-personagem" id="homem_de_ferro">
-                <img src="/static/img/ironman.png" alt="homem_de_ferro" width="200" height="200" />
-                <button>Homem de Ferro</button>
-            </div>
-
-
-            <div class="elemento-personagem" id="hulk">
-                <img src="/static/img/hulk.png" alt="homem_de_ferro" width="200" height="200" />
-                <button>Hulk</button>
-            </div>
-
-            <div class="elemento-personagem" id="capitao">
-                <img src="/static/img/Capitao-America.png" alt="capitao" width="200" height="200" />
-                <button>Capitão America</button>
-            </div>
+            {% for c in personagens %}
+                <div class="elemento-personagem" data-nome="{{c.nome}}" data-vida="{{c.vida}}">
+                    <img src="{{c.imagem}}" alt=" " width="200px" height="200px" />
+                    <button class="botao-personagem">{{c.nome}}</button>
+                </div>
+                {% endfor %}
 
             <div class="linha-container">
                 <h2><br>SELECIONE UM ATAQUE</h2>
             </div>
 
             <div class="elementos-container">
-                <div class="elemento-arma" id="escudo">
-                    <img src="/static/img/Shield.png" alt="Escudo" width="200" height="200" />
-                    <button>Escudo</button>
-                </div>
+                {% for c in armas %}
+                    <div class="elemento-arma" data-nome="{{c.nome}}" data-dano="{{c.dano}}">
+                        <img src="{{c.imagem}}" alt="" width="200px" height="200px" />
+                        <button class="botao-arma">{{c.nome}}</button>
+                    </div>
+                    {% endfor %}
 
-                <div class="elemento-arma" id="manopla">
-                    <img src="/static/img/manopla.png" alt="Manopla" width="200" height="200" />
-                    <button>Manopla</button>
-                </div>
-
-                <div class="elemento-arma" id="soco">
-                    <img src="/static/img/socoHulk.png" alt="Soco" width="200" height="200" />
-                    <button>Soco</button>
-                </div>
             </div>
             <div>
-                <button id="calcular" type="button">CALCULAR DANO</button>
+                <button onclick="calcularDano()" >CALCULAR DANO</button>
                 <div>
                     <span id="dano"></span>
                 </div>

@@ -51,6 +51,13 @@ h1,h2{
     margin: 30px;
     
 }
+
+.personagem-selecionado,.arma-selecionada{
+    border-bottom: 10px solid aqua;
+
+
+    
+}
 button {
     font-weight:bold;
     cursor: pointer;
