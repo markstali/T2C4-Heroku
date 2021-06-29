@@ -21,7 +21,7 @@
             {% for c in personagens %}
                 <div class="elemento-personagem" data-nome="{{c.nome}}" data-vida="{{c.vida}}">
                     <img src="{{c.imagem}}" alt=" " width="200px" height="200px" />
-                    <button class="botao-personagem">{{c.nome}}</button>
+                    <h1 class="botao-personagem">{{c.nome}}<h1>               
                 </div>
                 {% endfor %}
 
@@ -33,16 +33,13 @@
                 {% for c in armas %}
                     <div class="elemento-arma" data-nome="{{c.nome}}" data-dano="{{c.dano}}">
                         <img src="{{c.imagem}}" alt="" width="200px" height="200px" />
-                        <button class="botao-arma">{{c.nome}}</button>
+                        <h1 class="botao-arma">{{c.nome}}</h1>
                     </div>
                     {% endfor %}
 
             </div>
             <div>
                 <button onclick="calcularDano()" >CALCULAR DANO</button>
-                <div>
-                    <span id="dano"></span>
-                </div>
             </div>
 
 

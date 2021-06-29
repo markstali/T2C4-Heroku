@@ -1,20 +1,20 @@
 /* *{
     border: 1px solid black;
-} */
-body {
-	font-family: 'Verdana', sans-serif;
-    
 }
+body {
+	
+    
+} */
 h1,h2{
     color: #FFF;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
 }
 
 .calculadora-dano {
     color: white;
-    margin-left: 18%;
-    margin-right:18%;
+    margin-left: 25%;
+    margin-right: 16%;
     border:none;
     border-radius: 20px;
     background-image:url("/static/img/avengers.png"), url("/static/img/universo.jpg");
@@ -42,28 +42,35 @@ h1,h2{
     flex-wrap: wrap;
     justify-content: space-around; 
     background-position: center;
-    text-align: center;
+  
 }
-.elemento-personagem, .elemento-arma{
+.elemento-personagem, 
+.elemento-arma{
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 30px;
-    
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    padding-bottom: 10px;
+    background-color: azure;
+}
+
+.elemento-personagem:hover, 
+.elemento-arma:hover{
+    transform: scale(1.05);
 }
 
 .personagem-selecionado,.arma-selecionada{
     border-bottom: 10px solid aqua;
-
-
-    
+    transform: scale(1.05);
+  
 }
-button {
+button{
     font-weight:bold;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     display: block;
     border-radius: 20px;
+    
 }
 
