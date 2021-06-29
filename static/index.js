@@ -1,5 +1,5 @@
 // indica quais são meus inimigos e minhas armas
-const personagens = document.querySelectorAll('.elemento-personagem');
+const personagens = document.querySelectorAll('.elementos-contanier');
 const armas = document.querySelectorAll('.elemento-arma');
 
 // MANIPULAÇÃO DA ÁRVORE DOM DO HTML
@@ -7,7 +7,6 @@ const armas = document.querySelectorAll('.elemento-arma');
 // ENTENDER QUE EU CLIQUEI EM UM INIMIGO, E SELECIONAR ESTE INIMIGO
 
 for(const i of personagens){
-    
 
     i.addEventListener('click', function(){
         alert(`o botao foi clicado`)
@@ -35,7 +34,7 @@ for(const a of armas){
 function calcularDano(){
 
     danoTotal = danoDaArma + rolarOsDados();
-    // + rolarOsDados();
+    
 
     if(danoTotal >= vidaDoInimigo){
         alert(`O dano foi ${danoTotal} e a vida do inimigo era ${vidaDoInimigo}. Você matou!!`)
